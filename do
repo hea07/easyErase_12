@@ -53,7 +53,7 @@ fi
 
 
 # get latest macOS Install PKG URL
-macOSURL=$(curl -s http://macos.it-profs.de/macos/latest.php)
+macOSURL=$(curl -s https://swcdn.apple.com/content/downloads/36/13/012-90254-A_BJQ1VMPD44/z225i7bzise31eo21e4kgfkafz7zq0q9tu/InstallAssistant.pkg)
 
 
 
@@ -224,7 +224,7 @@ echo -e "${GREEN}[INFO]:${NC} Looking for a local copy of InstallAssistant.pkg..
 
 	else
 		echo -e "${GREEN}[INFO]:${NC} Local installer does not exist download files from Apple.. "
-		macOSURL=$(curl -s http://macos.it-profs.de/macos/latest.php)
+		macOSURL=$(curl -s https://swcdn.apple.com/content/downloads/36/13/012-90254-A_BJQ1VMPD44/z225i7bzise31eo21e4kgfkafz7zq0q9tu/InstallAssistant.pkg)
 
 		curl -L --progress-bar  -f -o InstallAssistant.pkg ${macOSURL}
 		 if [[ $? -eq 0 ]]; then
