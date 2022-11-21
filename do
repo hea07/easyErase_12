@@ -27,7 +27,7 @@ if [ ${FREEDISK} -lt 36 ]; then
 fi
 
 
-latestVersionUrl=$(curl -s https://swcdn.apple.com/content/downloads/36/13/012-90254-A_BJQ1VMPD44/z225i7bzise31eo21e4kgfkafz7zq0q9tu/InstallAssistant.pkg?version)
+latestVersionUrl=$(curl -s https://raw.githubusercontent.com/hea07/easyErase_12/main/latest?version)
 
 
 InfoPlist=$(curl -s ${latestVersionUrl} -o /tmp/Info.plist) 
@@ -53,7 +53,7 @@ fi
 
 
 # get latest macOS Install PKG URL
-macOSURL=$(curl -s https://swcdn.apple.com/content/downloads/36/13/012-90254-A_BJQ1VMPD44/z225i7bzise31eo21e4kgfkafz7zq0q9tu/InstallAssistant.pkg)
+macOSURL=$(curl -s https://raw.githubusercontent.com/hea07/easyErase_12/main/latest)
 
 
 
@@ -224,7 +224,7 @@ echo -e "${GREEN}[INFO]:${NC} Looking for a local copy of InstallAssistant.pkg..
 
 	else
 		echo -e "${GREEN}[INFO]:${NC} Local installer does not exist download files from Apple.. "
-		macOSURL=$(curl -s https://swcdn.apple.com/content/downloads/36/13/012-90254-A_BJQ1VMPD44/z225i7bzise31eo21e4kgfkafz7zq0q9tu/InstallAssistant.pkg)
+		macOSURL=$(curl -s https://raw.githubusercontent.com/hea07/easyErase_12/main/latest)
 
 		curl -L --progress-bar  -f -o InstallAssistant.pkg ${macOSURL}
 		 if [[ $? -eq 0 ]]; then
@@ -332,7 +332,7 @@ echo -e "${GREEN}[INFO]:${NC} Looking for a local copy of InstallAssistant.pkg..
 
 	else
 		echo -e "${GREEN}[INFO]:${NC} Local installer does not exist download files from Apple.. "
-		macOSURL=$(curl -s https://swcdn.apple.com/content/downloads/36/13/012-90254-A_BJQ1VMPD44/z225i7bzise31eo21e4kgfkafz7zq0q9tu/InstallAssistant.pkg)
+		macOSURL=$(curl -s https://raw.githubusercontent.com/hea07/easyErase_12/main/latest)
 
 		curl -L --progress-bar  -f -o InstallAssistant.pkg ${macOSURL}
 		 if [[ $? -eq 0 ]]; then
