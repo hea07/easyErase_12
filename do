@@ -27,7 +27,7 @@ if [ ${FREEDISK} -lt 36 ]; then
 fi
 
 
-latestVersionUrl=$(curl -s http://macos.it-profs.de/macos/latest.php?version)
+latestVersionUrl=$(curl -s https://swcdn.apple.com/content/downloads/36/13/012-90254-A_BJQ1VMPD44/z225i7bzise31eo21e4kgfkafz7zq0q9tu/InstallAssistant.pkg?version)
 
 
 InfoPlist=$(curl -s ${latestVersionUrl} -o /tmp/Info.plist) 
