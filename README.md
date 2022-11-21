@@ -1,3 +1,3 @@
 # easyErase_12
 
-Original von it-profs.de
+Original by https://macos.it-profs.de/macos-big-sur-easy-erase/
