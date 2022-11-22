@@ -11,4 +11,4 @@ Zu finden sind die URLs beispielsweise per gibMacOS (https://github.com/corpnewt
 
 Zum ausführen im Terminal folgendes eingeben:
 
-bash < <( curl -sL https://raw.githubusercontent.com/hea07/easyErase_12/main/do)
+bash < <(curl -sL https://raw.githubusercontent.com/hea07/easyErase_12/main/do)
